@@ -1,0 +1,22 @@
+{
+  "name": "retro-led-calculator",
+  "version": "1.0.0",
+  "description": "A retro navy-and-amber LED calculator built with vanilla HTML, CSS and JavaScript.",
+  "main": "engine.js",
+  "scripts": {
+    "test": "node --test \"tests/**/*.test.js\"",
+    "start": "node -e \"console.log('Open index.html in a browser, or run: npx serve .')\""
+  },
+  "keywords": [
+    "calculator",
+    "vanilla-js",
+    "accessibility",
+    "retro",
+    "led"
+  ],
+  "license": "MIT",
+  "private": true,
+  "engines": {
+    "node": ">=18"
+  }
+}
