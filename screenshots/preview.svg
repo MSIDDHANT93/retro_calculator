@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 620" width="440" height="620" role="img" aria-label="Retro LED calculator interface preview">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="0%" r="90%">
+      <stop offset="0%" stop-color="#0b2a63"/>
+      <stop offset="65%" stop-color="#04102b"/>
+    </radialGradient>
+    <linearGradient id="shell" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#071b45"/>
+      <stop offset="100%" stop-color="#061638"/>
+    </linearGradient>
+    <pattern id="scan" width="4" height="3" patternUnits="userSpaceOnUse">
+      <rect width="4" height="1" fill="#ffffff" opacity="0.05"/>
+    </pattern>
+    <style>
+      .led { font-family: 'Share Tech Mono', 'Courier New', monospace; }
+      .ui { font-family: 'Segoe UI', system-ui, sans-serif; font-weight: 700; }
+    </style>
+  </defs>
+
+  <rect width="440" height="620" fill="url(#bg)"/>
+  <rect x="20" y="20" width="400" height="580" rx="24" fill="url(#shell)" stroke="#16418f" stroke-width="2"/>
+
+  <!-- display -->
+  <rect x="42" y="42" width="356" height="112" rx="12" fill="#020a1c" stroke="#000814" stroke-width="2"/>
+  <rect x="42" y="42" width="356" height="112" rx="12" fill="url(#scan)"/>
+  <text class="led" x="380" y="76" text-anchor="end" font-size="16" fill="#ffc247">1,024 &#215;</text>
+  <text class="led" x="380" y="132" text-anchor="end" font-size="46" fill="#4dff7d">3.14159</text>
+
+  <!-- keypad -->
+  <g class="ui" font-size="20" text-anchor="middle">
+    <!-- row 1 -->
+    <rect x="42" y="176" width="82" height="60" rx="14" fill="#ffffff"/>
+    <text x="83" y="213" fill="#04102b">AC</text>
+    <rect x="134" y="176" width="82" height="60" rx="14" fill="#ffffff"/>
+    <text x="175" y="213" fill="#04102b">CE</text>
+    <rect x="226" y="176" width="82" height="60" rx="14" fill="#ffffff"/>
+    <text x="267" y="213" fill="#04102b">&#9003;</text>
+    <rect x="318" y="176" width="80" height="60" rx="14" fill="#1d54b8" stroke="#ffc247" stroke-width="2"/>
+    <text x="358" y="214" fill="#ffc247" font-size="24">&#247;</text>
+
+    <!-- row 2 -->
+    <rect x="42" y="248" width="82" height="60" rx="14" fill="#16418f"/>
+    <text x="83" y="285" fill="#ffffff">7</text>
+    <rect x="134" y="248" width="82" height="60" rx="14" fill="#16418f"/>
+    <text x="175" y="285" fill="#ffffff">8</text>
+    <rect x="226" y="248" width="82" height="60" rx="14" fill="#16418f"/>
+    <text x="267" y="285" fill="#ffffff">9</text>
+    <rect x="318" y="248" width="80" height="60" rx="14" fill="#1d54b8" stroke="#ffc247" stroke-width="2"/>
+    <text x="358" y="286" fill="#ffc247" font-size="24">&#215;</text>
+
+    <!-- row 3 -->
+    <rect x="42" y="320" width="82" height="60" rx="14" fill="#16418f"/>
+    <text x="83" y="357" fill="#ffffff">4</text>
+    <rect x="134" y="320" width="82" height="60" rx="14" fill="#16418f"/>
+    <text x="175" y="357" fill="#ffffff">5</text>
+    <rect x="226" y="320" width="82" height="60" rx="14" fill="#16418f"/>
+    <text x="267" y="357" fill="#ffffff">6</text>
+    <rect x="318" y="320" width="80" height="60" rx="14" fill="#1d54b8" stroke="#ffc247" stroke-width="2"/>
+    <text x="358" y="358" fill="#ffc247" font-size="24">&#8722;</text>
+
+    <!-- row 4 -->
+    <rect x="42" y="392" width="82" height="60" rx="14" fill="#16418f"/>
+    <text x="83" y="429" fill="#ffffff">1</text>
+    <rect x="134" y="392" width="82" height="60" rx="14" fill="#16418f"/>
+    <text x="175" y="429" fill="#ffffff">2</text>
+    <rect x="226" y="392" width="82" height="60" rx="14" fill="#16418f"/>
+    <text x="267" y="429" fill="#ffffff">3</text>
+    <rect x="318" y="392" width="80" height="60" rx="14" fill="#1d54b8" stroke="#ffc247" stroke-width="2"/>
+    <text x="358" y="430" fill="#ffc247" font-size="24">+</text>
+
+    <!-- row 5 -->
+    <rect x="42" y="464" width="82" height="60" rx="14" fill="#ffffff"/>
+    <text x="83" y="501" fill="#04102b">%</text>
+    <rect x="134" y="464" width="82" height="60" rx="14" fill="#ffffff"/>
+    <text x="175" y="501" fill="#04102b">&#177;</text>
+    <rect x="226" y="464" width="82" height="60" rx="14" fill="#16418f"/>
+    <text x="267" y="501" fill="#ffffff">0</text>
+    <rect x="318" y="464" width="80" height="60" rx="14" fill="#16418f"/>
+    <text x="358" y="501" fill="#ffffff">.</text>
+
+    <!-- equals -->
+    <rect x="42" y="536" width="356" height="60" rx="14" fill="#ffc247" stroke="#ffdca0" stroke-width="2"/>
+    <text x="220" y="574" fill="#04102b" font-size="24">=</text>
+  </g>
+</svg>
