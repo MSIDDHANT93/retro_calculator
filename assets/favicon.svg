@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Retro calculator icon">
+  <rect width="64" height="64" rx="12" fill="#071b45"/>
+  <rect x="10" y="9" width="44" height="16" rx="3" fill="#030d22" stroke="#0b2a63" stroke-width="2"/>
+  <text x="49" y="21.5" text-anchor="end" font-family="'Courier New',monospace" font-size="12" font-weight="700" fill="#35ff6a">42</text>
+  <g fill="#1750b5">
+    <rect x="10" y="31" width="12" height="9" rx="2"/>
+    <rect x="26" y="31" width="12" height="9" rx="2"/>
+    <rect x="10" y="44" width="12" height="9" rx="2"/>
+    <rect x="26" y="44" width="12" height="9" rx="2"/>
+  </g>
+  <rect x="42" y="31" width="12" height="22" rx="2" fill="#ffb320"/>
+</svg>

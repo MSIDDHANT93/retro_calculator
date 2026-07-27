@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="A retro navy-and-amber LED calculator with full keyboard support, accessible markup and a dependency-free vanilla JavaScript engine.">
+<meta name="theme-color" content="#04102b">
+<title>Retro LED Calculator</title>
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#keys">Skip to keypad</a>
+
+  <main class="calculator">
+    <h1 class="visually-hidden">Retro LED calculator</h1>
+
+    <section class="display" aria-labelledby="display-label">
+      <h2 class="visually-hidden" id="display-label">Display</h2>
+      <p class="display-ghost" aria-hidden="true">888888888888</p>
+      <p class="display-expression" id="expression" aria-hidden="true"></p>
+      <p class="display-value" id="screen" aria-hidden="true">0</p>
+      <p class="visually-hidden" id="announcer" role="status" aria-live="polite" aria-atomic="true">0</p>
+    </section>
+
+    <div class="keys" id="keys" role="group" aria-label="Calculator keypad">
+      <button type="button" class="key key-fn" data-action="clearAll" aria-label="All clear">AC</button>
+      <button type="button" class="key key-fn" data-action="clearEntry" aria-label="Clear entry">CE</button>
+      <button type="button" class="key key-fn" data-action="backspace" aria-label="Backspace">&#9003;</button>
+      <button type="button" class="key key-op" data-action="operator" data-operator="/" aria-label="Divide">&divide;</button>
+
+      <button type="button" class="key key-num" data-action="digit" data-digit="7">7</button>
+      <button type="button" class="key key-num" data-action="digit" data-digit="8">8</button>
+      <button type="button" class="key key-num" data-action="digit" data-digit="9">9</button>
+      <button type="button" class="key key-op" data-action="operator" data-operator="*" aria-label="Multiply">&times;</button>
+
+      <button type="button" class="key key-num" data-action="digit" data-digit="4">4</button>
+      <button type="button" class="key key-num" data-action="digit" data-digit="5">5</button>
+      <button type="button" class="key key-num" data-action="digit" data-digit="6">6</button>
+      <button type="button" class="key key-op" data-action="operator" data-operator="-" aria-label="Subtract">&minus;</button>
+
+      <button type="button" class="key key-num" data-action="digit" data-digit="1">1</button>
+      <button type="button" class="key key-num" data-action="digit" data-digit="2">2</button>
+      <button type="button" class="key key-num" data-action="digit" data-digit="3">3</button>
+      <button type="button" class="key key-op" data-action="operator" data-operator="+" aria-label="Add">+</button>
+
+      <button type="button" class="key key-fn" data-action="percent" aria-label="Percent">%</button>
+      <button type="button" class="key key-fn" data-action="sign" aria-label="Toggle sign">&plusmn;</button>
+      <button type="button" class="key key-num" data-action="digit" data-digit="0">0</button>
+      <button type="button" class="key key-num" data-action="decimal" aria-label="Decimal point">.</button>
+
+      <button type="button" class="key key-eq key-wide" data-action="equals" aria-label="Equals">=</button>
+    </div>
+
+    <footer class="hints">
+      <p>Keyboard: <kbd>0</kbd>&ndash;<kbd>9</kbd> <kbd>.</kbd> <kbd>+</kbd> <kbd>&minus;</kbd> <kbd>*</kbd> <kbd>/</kbd> <kbd>%</kbd> <kbd>Enter</kbd> <kbd>Backspace</kbd> <kbd>Delete</kbd> <kbd>Esc</kbd></p>
+    </footer>
+  </main>
+
+  <script src="engine.js" defer></script>
+  <script src="app.js" defer></script>
+</body>
+</html>
