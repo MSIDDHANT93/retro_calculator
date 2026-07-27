@@ -4,10 +4,14 @@
 [![Dependencies](https://img.shields.io/badge/dependencies-0-1d54b8?style=flat-square)](package.json)
 [![Built with](https://img.shields.io/badge/built%20with-vanilla%20JS-ffc247?style=flat-square)](engine.js)
 [![License](https://img.shields.io/badge/license-MIT-ffffff?style=flat-square)](LICENSE)
+[![Live Demo](https://img.shields.io/badge/live%20demo-GitHub%20Pages-4dff7d?style=flat-square)](https://msiddhant93.github.io/retro_calculator/)
 
 A desktop-grade calculator dressed as a 1970s navy-and-amber LED machine.
 No frameworks, no build step, no dependencies: three files, a pure state
 machine, and a fully keyboard-accessible interface.
+
+**[Live demo](https://msiddhant93.github.io/retro_calculator/)** &middot;
+[Report an issue](https://github.com/MSIDDHANT93/retro_calculator/issues)
 
 <p align="center">
   <img src="screenshots/preview.svg" alt="Retro LED calculator interface" width="360">
@@ -152,8 +156,8 @@ click / keydown  ->  app.js  ->  engine.dispatch(action, payload)
 No build step and no dependencies.
 
 ```bash
-git clone https://github.com/<your-username>/retro-led-calculator.git
-cd retro-led-calculator
+git clone https://github.com/MSIDDHANT93/retro_calculator.git
+cd retro_calculator
 ```
 
 Then either open `index.html` directly, or serve it:
@@ -176,6 +180,17 @@ isolation and a 500-operation stress run.
 Browser-only behaviour (animations, focus order, screen reader output,
 responsive breakpoints, Lighthouse) is tracked in
 [`tests/MANUAL-CHECKLIST.md`](tests/MANUAL-CHECKLIST.md).
+
+---
+
+## Deployment
+
+The project is fully static, so GitHub Pages serves it as-is with no build step.
+
+**Settings > Pages > Source: `Deploy from a branch` > Branch: `main` / `(root)`**
+
+The site then goes live at
+`https://msiddhant93.github.io/retro_calculator/` within a minute or two.
 
 ---
 
